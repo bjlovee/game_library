@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const gameSchema = new mongoose.Schema({
     title: { type: String, required: true},
     rating: { type: String, required: true},
+    image: { type: String, required: false},
     playedGame: Boolean 
 })
 
