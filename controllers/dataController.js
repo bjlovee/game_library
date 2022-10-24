@@ -10,7 +10,7 @@ const dataController = {
                     msg: err.message
                 })
             } else {
-                res.locals.data.game = deletedGame
+                res.locals.data.game = foundGame
                 next()
             }
         })

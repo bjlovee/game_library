@@ -2,7 +2,7 @@ const React = require('react')
 const Default = require('../layouts/Default.jsx')
 
 class New extends React.Component {
-    render(){
+    render (){
         return (
             <Default title="Create New Game">
                 <nav>
@@ -13,6 +13,7 @@ class New extends React.Component {
                 Rating:<input type="text" name="rating" placeholder='rating of Game Here'></input><br/>
                 Image: <input type="text" name="image" placeholder='insert game art url'></input><br/>
                 Played Game: <input type="checkbox" name="playedGame"></input><br/>
+                <input type="submit" value="Submit Game"></input>
                 </form>
             </Default>
         )

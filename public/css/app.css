@@ -1,0 +1,29 @@
+html { 
+    background: url(https://i.pinimg.com/originals/ee/16/63/ee1663cdf822962a2c46bfc21aa71e23.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+body {
+    font-style: Impact, fantasy;
+    color: rgb(235, 235, 235);
+}
+
+img {
+    width: 10%;
+    height: auto;
+
+}
+a {
+    color: hotpink;
+  }
+  a:hover {
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+}

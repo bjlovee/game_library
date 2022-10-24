@@ -1,15 +1,16 @@
 const React = require('react');
-const Default = require('..layouts/Default.jsx')
+const Default = require('../layouts/Default.jsx');
+
 
 class Index extends React.Component{
     render(){
-        const {games} = this.props
+        const {game} = this.props
         return(
-            <Default title="games Index Page">
+            <Default title="Game Library">
                 <ul>
                     {
-                        games.map((game) => {
-                            const {title, rating, playedGame} = game
+                        game.map((game) => {
+                            const {title, rating, image, playedGame} = game
                             return (
                                 <li key={game._id}>
                                     <a href={`/games/${game._id}`}>
@@ -22,14 +23,15 @@ class Index extends React.Component{
                                             'You have not played this game'
                                         }
                                         <br/>
-                                        <form method="POST" action={`/games/${games._id}?_method=DELETE`}>
-                                        <input type="submit" value={`Delete ${title} ${rating}`}/>
+                                        <form method="POST" action={`/games/${game._id}?_method=DELETE`}>
+                                        <input type="submit" value={`Delete ${title}`}/>
                                         </form>
+                                        {image ? <img src={image}/> : ''}
                                 </li>        
                             )
                         })
                     }
-                </ul>  
+                </ul> 
             </Default>
         )
     }

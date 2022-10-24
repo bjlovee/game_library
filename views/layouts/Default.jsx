@@ -1,5 +1,5 @@
 const React = require ('react');
-const Games = requrie('../../models/games');
+
 
 class Default extends React.Component {
 
