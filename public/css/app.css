@@ -1,21 +1,35 @@
 html { 
-    background: url(https://i.pinimg.com/originals/ee/16/63/ee1663cdf822962a2c46bfc21aa71e23.gif) no-repeat center center fixed; 
+    background: url(https://wallpaperaccess.com/full/670557.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  } 
+body {
+  color: rgb(231, 78, 23);
+}
+.container {
+  padding: 2rem;
+  display: grid;
+ grid-gap: 20px;
+ grid-template-columns: repeat(5, 1fr);
+} 
+
+  .cell > img{
+    /* background-color: cornflowerblue; */
+    padding: 1rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-color: rgb(34, 211, 18);
   }
 
-
-body {
-    font-style: Impact, fantasy;
-    color: rgb(235, 235, 235);
-}
 
 img {
     width: 10%;
     height: auto;
-
+    border-style: ridge;
+  border-color: rgb(34, 211, 18);
 }
 a {
     color: hotpink;
