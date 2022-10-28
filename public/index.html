@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/app.css">
-    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
-                
-    <title>Game Library</title>
+    <link href="http://fonts.cdnfonts.com/css/charasans" rel="stylesheet">
+    <title>Comment Section</title>
 </head>
 <body>
-    <h1>Welcome To The Game Library</h1>
+    <div class="container">
+    <h1>Welcome</h1>
 
-    <div class="container flex">
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
-        <div class="cell"><img src="https://media.gamestop.com/i/gamestop/11206901-11206901?fmt=auto"/></div>
+    <div id="comment"class="card mb-2">
+       <div class="card-body">
+        <h5 class="card-title">Name: userName</h5>
+        <h6 class="card-subtitle text-muted">Date: 10/28/22</h6><br/>
+        This is where the comment will go!
+       </div> 
     </div>
+
+    <hr>
+
+    <div id="main-content">
+        <h3>Leave your comments below!</h3>
+       <div id="make-comment">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input style="width: 250px;" form-control type="text" id="name" Required>
+        </div>
+        <div class="form-group">
+            <label for="message">Type Comment Below!</label>
+            <textarea Required class="form-control" id="message"></textarea>
+        </div>
+        <button type="button" class="btn btn-success">Comment</button>
+       </div>
+    </div>
+</div>
 </body>
 </html>

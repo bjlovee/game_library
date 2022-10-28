@@ -1,43 +1,77 @@
+@import url('http://fonts.cdnfonts.com/css/charasans');
+
 html { 
-    background: url(https://wallpaperaccess.com/full/670557.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   } 
+
 body {
+  background: url(https://wallpaperaccess.com/full/670557.jpg) no-repeat center center fixed;
   color: rgb(231, 78, 23);
+  font-family: 'CharaSans', sans-serif;
+  font-family: 'CharaSerif', sans-serif;
 }
-.container {
-  padding: 2rem;
-  display: grid;
- grid-gap: 20px;
- grid-template-columns: repeat(5, 1fr);
-} 
 
-  .cell > img{
-    /* background-color: cornflowerblue; */
-    padding: 1rem;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-color: rgb(34, 211, 18);
-  }
+h1 {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.card-body {
+background-color: rgb(55, 54, 54);
+}
 
+#main-content {
+    text-align: center;
+    margin-top: 25px;
+}
 
+#message {
+  background-color: rgb(55, 54, 54);
+  color: azure;
+}
+  
 img {
-    width: 10%;
-    height: auto;
-    border-style: ridge;
-  border-color: rgb(34, 211, 18);
+    width: 30vh;
 }
+
+
+.index-page > .row {
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding-top: 5rem;
+  padding-left: 30pc;
+}
+
+.index-page > h1 {
+  color: aliceblue;
+  text-align: center; 
+  font-size: 60px;
+  padding-right: 7rem;
+}
+
 a {
     color: hotpink;
   }
+
   a:hover {
     color: white;
   }
 
   ul {
     list-style-type: none;
+}
+
+input{
+  background-color:rgb(55, 54, 54);
+  color:ivory
+}
+
+input:hover{
+  color: red
 }

@@ -1,0 +1,24 @@
+/// ///////////////////////////////////////////
+// Import Dependencies
+/// ///////////////////////////////////////////
+const mongoose = require('mongoose')
+
+/// /////////////////////////////////////////////
+// Define Model
+/// /////////////////////////////////////////////
+// pull schema and model from mongoose
+const { Schema, model } = mongoose
+
+// make user schema
+const userSchema = new Schema({
+  name: {type: String, required: true},
+  comment: { type: String, required: true }
+})
+
+// make fruit model
+const User = model('User', userSchema)
+
+/// ////////////////////////////////////////////////
+// Export Model
+/// ////////////////////////////////////////////////
+module.exports = User
