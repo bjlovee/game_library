@@ -7,7 +7,7 @@ class Edit extends React.Component {
     return (
       <Default title={`${title} Edit Page`} game={this.props.games}>
         <form method="POST" action={`/games/${_id}?_method=PUT`}>
-          Title: <input type="text" title="title" defaultValue={title} /><br />
+          Title:&nbsp;&nbsp;&nbsp; <input type="text" title="title" defaultValue={title} /><br />
           Rating: <input type="text" title="rating" defaultValue={rating} /><br />
           Played Game: <input type="checkbox" title="playedGame" defaultChecked={playedGame} /><br />
           <input type="submit" value="Edit Games" />

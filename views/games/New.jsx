@@ -9,9 +9,9 @@ class New extends React.Component {
           <a href='/games'>Go Back To Game Library Home Page</a>
         </nav>
         <form method='POST' action='/games'>
-          Title: &nbsp; &nbsp;<input type='text' name='title' placeholder='Name of Game Here' /><br />
+          Title:&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='title' placeholder='Name of Game Here' /><br />
           Rating: <input type='text' name='rating' placeholder='rating of Game Here' /><br />
-          Image: &nbsp;<input type='text' name='image' placeholder='insert game art url' /><br />
+          Image:&nbsp;&nbsp;<input type='text' name='image' placeholder='insert game art url' /><br />
           Played Game: <input type='checkbox' name='playedGame' /><br />
           <input type='submit' value='Submit Game' />
         </form>
