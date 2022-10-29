@@ -1,5 +1,5 @@
-const { update } = require('../models/games')
-const Games = require('../models/games')
+// const { update } = require('../models/games')
+const Games = require('../../models/games')
 
 const dataController = {
   // Index,

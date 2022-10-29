@@ -17,7 +17,7 @@ const viewController = {
     res.redirect(RESOURCE_PATH)
   },
   redirectShow (req, res, next) {
-    const userId = req.params.id || res.locals.data.users._id
+    const userId = req.params.id || res.locals.data.user._id
     res.redirect(`${RESOURCE_PATH}/${userId}`)
   }
 }
