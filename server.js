@@ -19,10 +19,11 @@ db.once('open', () => {
 })
 
 // Start Middleware
-app.use(methodOverride('_method'));
-app.use(express.static('public'));
-app.use('/images', express.static('images'));
-app.use('/games', require('./controllers/game/routeController'));
+app.use(methodOverride('_method'))
+app.use(express.static('public'))
+app.use('/images', express.static('images'))
+app.use('/games', require('./controllers/game/routeController'))
+app.use('/users', require('./controllers/user/routeController'))
 // End Middleware
 
 // Tell the app to listen on a port

@@ -11,14 +11,15 @@ const { Schema, model } = mongoose
 
 // make user schema
 const userSchema = new Schema({
-  name: {type: String, required: true},
-  comment: { type: String, required: true }
+  name: { type: String, required: true },
+  comment: { type: String, required: true },
+  likeGame: Boolean
 })
 
 // make fruit model
-const User = model('User', userSchema)
+const Users = model('Users', userSchema)
 
 /// ////////////////////////////////////////////////
 // Export Model
 /// ////////////////////////////////////////////////
-module.exports = User
+module.exports = Users

@@ -45,7 +45,7 @@ const dataController = {
   // Create
   create (req, res, next) {
     console.log(req.body)
-    req.body.playedGame = req.body.playedGame === 'on'? true : false;
+    req.body.playedGame = req.body.playedGame === 'on'
     Games.create(req.body, (err, createdGames) => {
       if (err) {
         res.status(400).send({
