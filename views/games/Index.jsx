@@ -15,13 +15,13 @@ class Index extends React.Component {
                             <li key={game._id}>
                               <a href={`/games/${game._id}`}>
                                 {title}
-                              </a> is {rating}
+                              </a> Is Rated {rating}
 
                               <br />
                               {
                                             playedGame
-                                              ? 'You have played this game'
-                                              : 'You have not played this game'
+                                              ? 'You Have played This Game'
+                                              : 'You Have Not Played This Game'
                                         }
                               <br />
                               <form method='POST' action={`/games/${game._id}?_method=DELETE`}>

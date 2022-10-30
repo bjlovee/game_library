@@ -35,6 +35,11 @@ background-color: rgb(55, 54, 54);
   
 img {
     width: 30vh;
+    transition: transform .2s; /* Animation */
+}
+
+img:hover {
+  transform: scale(1.3);
 }
 
 
@@ -56,7 +61,7 @@ img {
 }
 
 a {
-    color: hotpink;
+    color: rgb(231, 78, 23);
   }
 
   a:hover {

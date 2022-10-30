@@ -6,16 +6,18 @@ class Index extends React.Component {
     const { user } = this.props
     return (
       <Default>
-        <div className='container'>
+        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous' />
+        <link rel='stylesheet' href='/css/app.css' />
+       <div className='container'>
           <h1>Welcome</h1>
 
-          <div id='comment' className='card mb-2'>
+          {/* <div id='comment' className='card mb-2'>
             <div className='card-body'>
               <h5 className='card-title'>Name: userName</h5>
               <h6 className='card-subtitle text-muted'>Date: 10/28/22</h6><br />
               This is where the comment will go!
             </div>
-          </div>
+          </div> */}
 
           <hr />
 
