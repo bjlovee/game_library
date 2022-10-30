@@ -6,7 +6,7 @@ class New extends React.Component {
     return (
       <Default title='Create New Game'>
         <nav>
-          <a href='/games'>Go Back To Game Library Home Page</a>
+          {/* <a href='/games'>Go Back To Game Library Home Page</a> */}
         </nav>
         <form method='POST' action='/games'>
           Title:&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='title' placeholder='Name of Game Here' /><br />

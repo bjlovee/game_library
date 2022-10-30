@@ -3,7 +3,7 @@ const Games = require('../../models/games')
 
 class Default extends React.Component {
   render () {
-    const { games, title } = this.props
+    const { games, users, title } = this.props
     return (
       <html>
         <head>
@@ -12,11 +12,22 @@ class Default extends React.Component {
           <title>{title}</title>
         </head>
         <body className={this.props.pageClass ? this.props.pageClass : ''}>
+      <div class="topnav">
+          <a class="active" href="/games">Game Library</a>
+          <a href="/games/new">Add A Game</a>
+          {games ? <a href={`/games/${games._id}/edit`}>Edit {games.title}</a> : ''}
+          {/* {games ? <a href={`/games/${games._id}`}>About {games.title}</a> : ''} */}
+
+          <a class="active" href="/users">Leave A Comments</a>
+          {/* {users ? <a href={`/users/${users._id}/edit`}>Edit {users.title}</a> : ''} */}
+          
+    
+      </div>
           <nav>
-            <a href='/games'>Game Library Home Page</a><br />
-            <a href='/games/new'>Add A Game</a><br />
-            {games ? <a href={`/games/${games._id}/edit`}>{games.title} Edit Game</a> : ''}<br />
-            {games ? <a href={`/games/${games._id}`}>{games.title}Game content</a> : ''}
+            {/* <a href='/games'>Game Library Home Page</a><br /> */}
+            {/* <a href='/games/new'>Add A Game</a><br /> */}
+            {/* {games ? <a href={`/games/${games._id}/edit`}>{games.title} Edit Game</a> : ''}<br /> */}
+            {/* {games ? <a href={`/games/${games._id}`}>{games.title}Game content</a> : ''} */}
           </nav>
           <h1>
             {title}

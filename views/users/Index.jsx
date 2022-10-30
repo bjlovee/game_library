@@ -3,7 +3,7 @@ const Default = require('../layouts/Default.jsx')
 
 class Index extends React.Component {
   render () {
-    const { user } = this.props
+    const { user, name, comment } = this.props
     return (
       <Default>
         <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous' />
@@ -18,11 +18,13 @@ class Index extends React.Component {
               This is where the comment will go!
             </div>
           </div> */}
-
+          <a href={`/users/${user._id}`}>
+                                {name}<br/>{comment}
+                              </a> 
           <hr />
 
           <div id='main-content'>
-            <h3>Leave your comments below!</h3>
+            <h3>Leave your comments</h3>
             <form method='POST' action='/users'>
             <div id='make-comment'>
               <div className='form-group'>
@@ -31,9 +33,10 @@ class Index extends React.Component {
               </div>
               <div className='form-group'>
                 <label for='message'>Type Comment Below!</label>
+                          <h3>⇩</h3>
                 <textarea required className='form-control' id='message' name='comment' />
               </div>
-              <button type='submit' className='btn btn-success'>Comment</button>
+              <button type='submit' className='btn '>Submit</button>
               
             </div>
             </form>

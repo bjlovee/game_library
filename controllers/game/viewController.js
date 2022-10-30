@@ -17,7 +17,7 @@ const viewController = {
     res.redirect(RESOURCE_PATH)
   },
   redirectShow (req, res, next) {
-    const gameId = req.params.id || res.locals.data.games._id
+    const gameId = req.params.id || res.locals.data.game._id
     res.redirect(`${RESOURCE_PATH}/${gameId}`)
   }
 }
