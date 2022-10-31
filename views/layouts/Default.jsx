@@ -12,13 +12,13 @@ class Default extends React.Component {
           <title>{title}</title>
         </head>
         <body className={this.props.pageClass ? this.props.pageClass : ''}>
-      <div class="topnav">
-          <a class="active" href="/games">Game Library</a>
+      <div className="topnav">
+          <a className="active" href="/games">Game Library</a>
           <a href="/games/new">Add A Game</a>
           {games ? <a href={`/games/${games._id}/edit`}>Edit {games.title}</a> : ''}
           {/* {games ? <a href={`/games/${games._id}`}>About {games.title}</a> : ''} */}
 
-          <a class="active" href="/users">Leave A Comments</a>
+          <a href="/users">Leave A Comments</a>
           {/* {users ? <a href={`/users/${users._id}/edit`}>Edit {users.title}</a> : ''} */}
           
     
