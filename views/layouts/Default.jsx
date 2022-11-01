@@ -1,9 +1,10 @@
 const React = require('react')
 const Games = require('../../models/games')
+const Users = require('../../models/user')
 
 class Default extends React.Component {
   render () {
-    const { games, users, title } = this.props
+    const { games, users, title, name, comment, _id } = this.props
     return (
       <html>
         <head>
@@ -16,12 +17,12 @@ class Default extends React.Component {
           <a className="active" href="/games">Game Library</a>
           <a href="/games/new">Add A Game</a>
           {games ? <a href={`/games/${games._id}/edit`}>Edit {games.title}</a> : ''}
-          {/* {games ? <a href={`/games/${games._id}`}>About {games.title}</a> : ''} */}
+          {games ? <a href={`/games/${games._id}`}>About {games.title}</a> : ''}
 
           <a href="/users">Leave A Comments</a>
+          { users ? <a href={`/users/${users._id}/edit`}>Comments{users.name}</a> : ''}
+          {/* {users ? <a href={`/users/show${users._id}`}>Show {name.comment}</a> : ''} */}
           {/* {users ? <a href={`/users/${users._id}/edit`}>Edit {users.title}</a> : ''} */}
-          
-    
       </div>
           <nav>
             {/* <a href='/games'>Game Library Home Page</a><br /> */}

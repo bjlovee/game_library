@@ -4,7 +4,7 @@ const Default = require('../layouts/Default.jsx')
 class New extends React.Component {
   render () {
     return (
-      <Default title='Create New Game'>
+      <Default title='Create New Comment'>
         <nav>
           <a href='/users'>Go Back To Comments Home Page</a>
         </nav>

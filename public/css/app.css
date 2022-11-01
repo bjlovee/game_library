@@ -13,9 +13,9 @@ body {
   font-family: 'CharaSans', sans-serif;
   font-family: 'CharaSerif', sans-serif;
 }
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
-  background-color: rgb(55, 54, 54);
+  background-color: rgba(55, 54, 54, 0.17);
   overflow: hidden;
 }
 
@@ -31,7 +31,7 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgb(39, 37, 37);
   color: rgb(231, 78, 23);
 }
 
