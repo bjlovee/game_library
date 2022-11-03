@@ -1,5 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/charasans');
-
+@import url('https://fonts.cdnfonts.com/css/international-super-hero');
 html { 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10,8 +9,11 @@ html {
 body {
   background: url(https://wallpaperaccess.com/full/670557.jpg) no-repeat center center fixed;
   color: rgb(231, 78, 23);
-  font-family: 'CharaSans', sans-serif;
-  font-family: 'CharaSerif', sans-serif;
+  font-family: 'International Super Hero', sans-serif;
+  font-family: 'International Super Hero Out', sans-serif;
+  font-family: 'International Super Hero Exp', sans-serif;
+  font-family: 'International Super Hero Cond', sans-serif;
+  font-family: 'International Super Hero Light', sans-serif;
 }
 /* Add a background color to the top navigation */
 .topnav {
@@ -47,7 +49,7 @@ h1 {
   margin-bottom: 55px;
 }
 .card-body {
-background-color: rgb(55, 54, 54);
+background-color: rgb(35, 35, 35);
 }
 
 #main-content {
@@ -56,13 +58,15 @@ background-color: rgb(55, 54, 54);
 }
 
 #message {
-  background-color: rgb(55, 54, 54);
+  background-color: rgb(35, 35, 35);
   color: azure;
 }
   
 img {
     width: 30vh;
     transition: transform .2s; /* Animation */
+    box-shadow: 1px 1px 7px 1px  rgb(82, 81, 81);
+  
 }
 
 img:hover {
@@ -100,7 +104,7 @@ a {
 }
 
 input{
-  background-color:rgb(55, 54, 54);
+  background-color:rgb(35, 35, 35);
   color:ivory
 }
 
@@ -115,4 +119,47 @@ input:hover {
 .submit {
   color: rgb(231, 78, 23);
 
+}
+
+.ad-banner {
+  position: absolute;
+  padding-top: 180px;
+  padding-left: 30px;
+ max-width: 10%;
+ max-height: 100%;
+ /* border: solid white;  */
+}
+
+.ad-banner > img {
+  width: 190px;
+ 
+}
+
+.right-banner {
+   position: relative;
+  padding-top: 180px;
+  padding-right: 30px;
+  float: right;
+  /* border: solid white;  */
+  width: 200px; 
+  max-height: 100%; 
+}
+
+.right-banner > img {
+  width: 190px;
+ 
+}
+
+.collection {
+  position: absolute;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+.legends {
+  position: absolute;
+  padding-left: 1650px;
+  padding-bottom: 10px;
+  font-size: 40px;
 }
