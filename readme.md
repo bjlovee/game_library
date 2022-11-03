@@ -36,7 +36,7 @@ Destroy | /games/:id | DELETE | none | game.findByIdAndRemove or game.findByIdAn
 <br>
 <br>
 <br>
-# User
+<!-- # User
 Action | URL | HTTP Verb | JSX view filename | mongoose method 
 --- | --- | --- | --- |--- 
 Index | /users/ | GET | Index.jsx | game.find() | user.find()
@@ -45,4 +45,4 @@ New | /users/new | GET | New.jsx | none |
 Create | /users/ | POST | none | user.create(req.body) | 
 Edit | /users/:id/edit | GET | Edit.jsx | user.findOne or user.findById | 
 Update | /users/:id | PUT | none | user.findByIdAndUpdate or user.findOneAndUpdate | 
-Destroy | /users/:id | DELETE | none | user.findByIdAndRemove or user.findByIdAndDelete |
+Destroy | /users/:id | DELETE | none | user.findByIdAndRemove or user.findByIdAndDelete | -->
