@@ -10,7 +10,7 @@
 <br>
 <br>
 # The Technologies Used:
-**Javacript** | **HTML** | **CSS** | **Node.js** | **express** |**react** | **MongoDB** | **Mongoose** 
+**Javacript** | **HTML** | **CSS** | **Node.js** | **Express** | **React** | **MongoDB** | **Mongoose** 
 <br>
 <br>
 # Getting Started:
