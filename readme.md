@@ -1,3 +1,24 @@
+# **Game Library**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Action | URL | HTTP Verb | JSX view filename | mongoose method 
 --- | --- | --- | --- |--- 
 Index | /logs/ | GET | Index.jsx | Log.find() | Log.find()

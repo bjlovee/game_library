@@ -31,7 +31,7 @@ class Index extends React.Component {
                   <input style={{ width: '250px' }} form-control="true" type='text' id='name' name='name' required />
                 </div>
                 <div className='form-group'>
-                  <label for='message'>Type Comment Below!</label>
+                  <label htmlFor='message'>Type Comment Below!</label>
                   <h3>⇩</h3>
                   <textarea required className='form-control' id='message' name='comment' />
                 </div>
