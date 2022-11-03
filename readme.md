@@ -9,7 +9,7 @@
 ![Screen Shot 2022-11-02 at 8 17 29 PM](https://user-images.githubusercontent.com/107008047/199635708-dfcb3294-4368-418b-8570-3f175b0d9989.png)
 <br>
 <br>
-# The Technogameies Used:
+# The Technologies Used:
 **Javacript** | **HTML** | **CSS** | **Node.js** | **express** |**react** | **MongoDB** | **Mongoose** 
 <br>
 <br>
@@ -33,8 +33,6 @@ Create | /games/ | POST | none | game.create(req.body) |
 Edit | /games/:id/edit | GET | Edit.jsx | game.findOne or game.findById | 
 Update | /games/:id | PUT | none | game.findByIdAndUpdate or game.findOneAndUpdate | 
 Destroy | /games/:id | DELETE | none | game.findByIdAndRemove or game.findByIdAndDelete |
-<br>
-<br>
 <br>
 <!-- # User
 Action | URL | HTTP Verb | JSX view filename | mongoose method 
