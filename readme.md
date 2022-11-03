@@ -26,7 +26,7 @@ https://github.com/bjlovee/game_library.git
 <br>
 <br>
 # Next Steps
-In the future I plan to add a featue that let the user play the game they choose. I woiuld also like to add a third party music player.
+In the future I plan to add a feature that let the user play the game they create. I would also like to add a third party music player.
 <br>
 <br>
 <br>
