@@ -18,16 +18,17 @@ class Index extends React.Component {
               <p>I really love this library I cant wait to see what future updates will bring!</p>
             </div>
           </div>
-          
+
           <div id='comment' className='card mb-2'>
             <div className='card-body'>
               <h5 className='card-title'>Name: King Vulture</h5>
               <h6 className='card-subtitle text-muted'>Date: 11/03/22</h6><br />
               <p>Wow this is crazy!, I can't wait to get started building my personal library.
-                I also love that I can add hundreds of games.</p>
+                I also love that I can add hundreds of games.
+              </p>
             </div>
           </div>
-          
+
           <hr />
 
           <div id='main-content'>
@@ -36,7 +37,7 @@ class Index extends React.Component {
               <div id='make-comment'>
                 <div className='form-group'>
                   <label htmlFor='name'>Name:&nbsp;&nbsp;</label>
-                  <input style={{ width: '250px' }} form-control="true" type='text' id='name' name='name' required />
+                  <input style={{ width: '250px' }} form-control='true' type='text' id='name' name='name' required />
                 </div>
                 <div className='form-group'>
                   <label htmlFor='message'>Type Comment Below!</label>

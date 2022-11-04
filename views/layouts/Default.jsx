@@ -12,9 +12,9 @@ class Default extends React.Component {
           <link rel='stylesheet' href='/css/app.css' />
           <title>{title}</title>
         </head>
-        <body className={this.props.pageClass ? this.props.pageClass : ''}>
+        <body className={this.props.pageClass ? this.props.pageClass : ''}>   
       <div className="topnav">
-          <a className="active" href="/games">Game Library</a>
+          <a href="/games">Game Library</a>
           <a href="/games/new">Add A Game</a>
           {games ? <a href={`/games/${games._id}/edit`}>Edit {games.title}</a> : ''}
           {games ? <a href={`/games/${games._id}`}>About {games.title}</a> : ''}
