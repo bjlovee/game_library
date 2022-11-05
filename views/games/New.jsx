@@ -18,6 +18,6 @@ class New extends React.Component {
       </Default>
     )
   }
-}
+} 
 
 module.exports = New
