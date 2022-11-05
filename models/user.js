@@ -16,7 +16,7 @@ const userSchema = new Schema({
   likeGame: Boolean
 })
 
-// make fruit model
+// make user model
 const Users = model('Users', userSchema)
 
 /// ////////////////////////////////////////////////
