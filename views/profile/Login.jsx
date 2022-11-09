@@ -5,7 +5,7 @@ const Default = require('../layouts/Default')
 class Login extends React.Component {
   render () {
     return (
-      <Default title="Login to Game Account">
+      <Default title="Login To Your Game Account">
         <form action='/profile/login' method='POST'>
           <fieldset>
             <legend>New Profile</legend>

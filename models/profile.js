@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 const { Schema, model } = mongoose
 
 // make profiles schema
-const userSchema = new Schema({
+const profileSchema = new Schema({
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true }
 })

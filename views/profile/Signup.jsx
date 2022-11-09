@@ -5,7 +5,7 @@ const Default = require('../layouts/Default')
 class SignUp extends React.Component {
   render () {
     return (
-      <Default title="Sign Up For Game Account">
+      <Default title="Sign Up For A Game Account">
         <form action='/profile/signup' method='POST'>
           <fieldset>
             <legend>New User</legend>
