@@ -10,6 +10,10 @@ https://trello.com/invite/b/8N9bq98N/ATTI750fe1bf4309c9921a899f7557a658b2C313439
 <br>
 
 # The app
+![Screen Shot 2022-11-09 at 2 57 28 PM](https://user-images.githubusercontent.com/107008047/200928885-a3a850c1-4706-45c0-9d38-119e60522c34.png)
+
+![Screen Shot 2022-11-09 at 2 57 54 PM](https://user-images.githubusercontent.com/107008047/200929012-0438baa0-547d-435a-ae92-35be7a8d9599.png)
+
 
 ![library](https://user-images.githubusercontent.com/107008047/199635623-7e08990a-e065-4c82-bc31-34c9fa9b4f54.png)
 
