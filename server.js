@@ -3,6 +3,8 @@ require('dotenv').config()
 const express = require('express')
 const methodOverride = require('method-override')
 const cors = require('cors')
+const session = require("express-session");
+const MongoStore = require("connect-mongo");
 const db = require('./models/db')
 const app = express()
 
@@ -19,6 +21,15 @@ app.set('view engine', 'jsx') // This Register The Jsx View Engine
 db.once('open', () => {
   console.log('The Data Base Is Connected')
 })
+
+app.use(
+  session({
+    secret: process.env.SECRET,
+    store: MongoStore.create({ mongoUrl: process.env.MONGO_URI }),
+    saveUninitialized: true,
+    resave: false,
+  })
+)
 
 // Start Middleware
 app.use(methodOverride('_method'))
