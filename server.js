@@ -2,6 +2,7 @@ require('dotenv').config()
 // All Require Modules
 const express = require('express')
 const methodOverride = require('method-override')
+const cors = require('cors')
 const db = require('./models/db')
 const app = express()
 
@@ -12,6 +13,7 @@ app.use((req, res, next) => {
   next()
 })
 
+app.use(cors())
 app.engine('jsx', require('jsx-view-engine').createEngine())
 app.set('view engine', 'jsx') // This Register The Jsx View Engine
 db.once('open', () => {
