@@ -7,6 +7,9 @@ class Index extends React.Component {
     return (
       <Default pageClass='index-page'>
         <h1>Welcome To Your Game Library</h1>
+        <form action='/profile/logout' method='GET'>
+            <input type="submit" value="logout" />
+          </form>
         <h3 className='collection'>NFT'S<br />Collections</h3>
         {/* <h3 className='legends'>Wall Of<br />Legends</h3> */}
         <div className='ad-banner'>
