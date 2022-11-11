@@ -34,6 +34,9 @@ app.use(
 
 // Start Middleware
 app.use(methodOverride('_method'))
+app.get("/", (req, res) => {
+  res.redirect("/profile/signup")
+})
 app.use(express.static('public'))
 app.use('/images', express.static('images'))
 app.use('/games', require('./controllers/game/routeController'))

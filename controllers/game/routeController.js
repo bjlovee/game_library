@@ -6,6 +6,15 @@ const router = express.Router()
 const dataController = require('../game/dataController')
 const viewController = require('../game/viewController')
 
+router.use((req, res, next) => {
+    if (req.session.loggedIn){
+        next() 
+    } else {
+        res.redirect("/profile/signup")
+    }
+})
+
+
 // Routes
 // Index
 router.get('/', dataController.index, viewController.index)
