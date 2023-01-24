@@ -21,9 +21,6 @@ class Default extends React.Component {
           {games ? <a href={`/games/${games._id}`}>About {games.title}</a> : ''}
 
           <a href="/users">Leave A Comment</a>
-          {/* <form action='/profile/logout' method='GET'>
-            <input type="submit" value="logout" />
-          </form> */}
           { users ? <a href={`/users/${users._id}/edit`}>Comments{users.name}</a> : ''}
           {/* {users ? <a href={`/users/show${users._id}`}>Show {name.comment}</a> : ''} */}
           {/* {users ? <a href={`/users/${users._id}/edit`}>Edit {users.title}</a> : ''} */}
